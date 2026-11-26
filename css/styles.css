@@ -1,0 +1,27 @@
+:root {
+  --seafoam: #AFCCC5;
+  --bg-tint: #E8FBFA;
+  --text: #1F2D2B;
+  --white: #ffffff;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg-tint);
+  max-width: 430px;      /* phone-sized width */
+  margin: 0 auto;        /* centres it on desktop */
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
