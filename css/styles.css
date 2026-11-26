@@ -73,15 +73,22 @@ section { margin-bottom: 28px; }
 
 /* Large Top Rated cards */
 .cafe-card--large {
+  position: relative;
   width: 150px;
   height: 200px;
-  background: #8aa5a0 center / cover;   /* swap for a real photo later */
-  display: flex;
-  align-items: flex-end;
+  background: #8aa5a0 center / cover no-repeat;
   color: var(--white);
 }
 
-.cafe-card__info { padding: 10px; font-size: 0.75rem; }
+.cafe-card__info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  background: linear-gradient(transparent, rgb(0 0 0 / 70%));
+  font-size: 0.75rem;
+}
 .cafe-card__info h3 { font-size: 0.9rem; }
 
 /* Small Saved cards */
