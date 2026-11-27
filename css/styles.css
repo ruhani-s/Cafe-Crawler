@@ -28,13 +28,19 @@ h2 {
 
 .top-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  position: relative;
   padding: 12px 20px;
   background: var(--bg-tint);
 }
 
-.logo { height: 40px; }
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px;
+}
 
 .icon-btn {
   background: none;
